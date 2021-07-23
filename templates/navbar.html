@@ -1,0 +1,22 @@
+<!-- ------------------------------- [edit] -------------------------------- -->
+<!-- 네비게이션바 -->
+<!doctype html>
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <a class="navbar-brand" href="{% url 'pybo:index' %}">Pybo</a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+        <ul class="navbar-nav">
+
+            <li><a class="nav-link" href="{ % url 'pybo:video' %}">영상</a>
+            <li><a class="nav-link" href="pybo:first">이벤트</a>
+            <li><a class="nav-link" href="pybo:first">설정</a>
+            <li><a class="nav-link" href="pybo:first">정보</a>
+            <li><a class="nav-link" href="pybo:first">등록</a>
+        </ul>
+</nav>
+{% endblock %}
+<!-- ----------------------------------------------------------------------- -->
